@@ -2,7 +2,6 @@ body {
   background: darkslategrey;
   color: wheat;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 auto;
 }
 
 h1,
@@ -14,14 +13,54 @@ p {
 a {
   color: azure;
   text-decoration: none;
+
+  &:hover {
+    color: yellow;
+  }
 }
 
 .header {
-  background: azure;
+  background: darkcyan;
   color: firebrick;
 
   a {
     color: black;
     padding: 1rem;
   }
+}
+
+.menu {
+  background: darkcyan;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+
+  li {
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  a {
+    color: black;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  &.is-open {
+    background: darkcyan;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+}
+
+.hamburger-box {
+  z-index: 2;
+  // opacity: 0.9;
 }
