@@ -1,0 +1,23 @@
+body {
+  background: darkslategrey;
+  color: wheat;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto; }
+
+h1,
+p {
+  margin: 0 auto;
+  padding: 50px; }
+
+a {
+  color: azure;
+  text-decoration: none; }
+
+.header {
+  background: azure;
+  color: firebrick; }
+  .header a {
+    color: black;
+    padding: 1rem; }
+
+/*# sourceMappingURL=main.css.map */
